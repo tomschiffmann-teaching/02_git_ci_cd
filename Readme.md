@@ -3,7 +3,17 @@
 ## Git
 
 - In Visual Studio Code Fenster am besten immer eine einzelne Projektmappem hineinziehen
-- Voraussetzung: Auf Github.com Account sollte bereits ein ssh Key hinterlegt sein (Falls nicht klicke [HIER](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent))
+
+### Voraussetzung:
+
+- Auf Github.com Account sollte bereits ein ssh Key hinterlegt sein (Falls nicht klicke [HIER](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent))
+
+- Die globalen Variablen sind auf eurem System hinterlegt
+
+```bash
+    $ git config --global user.name "John Doe"
+    $ git config --global user.email johndoe@example.com
+```
 
 ### Lokal ein Git Repository erstellen
 
