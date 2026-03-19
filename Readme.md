@@ -75,3 +75,42 @@ git push -u origin main
 ## Zusammenfassende Skizze
 
 ![](./images/git_recap.png)
+
+# Einführung in Github Actions
+
+![](./images/intro_gh_actions.png)
+
+## Warum nutzt man das überhaupt?
+
+- Automatisierung (z.B. Ausführung Tests automatisieren)
+- Compliance & Governance
+- Integrität der App (Qualitätssicherung)
+- Konsitenz
+- Unabhängigkeit
+- Skalierbarkeit der Software
+
+## 1. Was für Möglichkeiten haben wir, um so eine Pipeline/Workflow/Github Actions auszulösen (on)
+
+- Manuell gestartet
+- `push`
+- `merge_request`
+
+![](./images/on_github_actions.png)
+
+## 2. Branches auswählen, auf denen die jobs ausgeführt werden sollen
+
+## 3. Jobs
+
+![](./images/jobs_github_actions.png)
+
+```bash
+jobs:
+  test: # <-- der job Test
+    name: Test # <-- mit dem Namen
+    runs-on: ubuntu-latest # <-- Das Image auf dem das Skript (in dem fall echo... laufen soll. Das muss natürlich den Befehl unterstützen)
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run tests # <-- mit dem Namen
+        run: echo "Hello from Test stage, all tests have passed" # <-- run hinterlegt das Skript was letzendlich ausgeführt werden soll
+
+```
