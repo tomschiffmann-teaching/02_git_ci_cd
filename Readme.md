@@ -71,3 +71,7 @@ git push -u origin main
 6. Merge Resolve pushen
 7. Überprüfen, ob germerged werden kann
 8. Mergen :)
+
+## Zusammenfassende Skizze
+
+![](./images/git_recap.png)
