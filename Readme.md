@@ -91,7 +91,8 @@ git push -u origin main
 
 ## 1. Was für Möglichkeiten haben wir, um so eine Pipeline/Workflow/Github Actions auszulösen (on)
 
-- Manuell gestartet
+- `workflow_dispatch`
+- `schedule`
 - `push`
 - `merge_request`
 
