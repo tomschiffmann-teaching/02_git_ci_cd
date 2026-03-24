@@ -50,3 +50,4 @@ resource "aws_instance" "demo" {
 20. In der AWS Console überprüfen, ob die EC2 Instanz erstellt wurde
 21. Probieren, ob ihr euch auf die EC2 Instanz verbinden könnt (via Instance Connect)
 22. Optional: Probiert, ob ihr euch mit dem privatem Schlüssel von eurem Computer aus auf die EC2 Instanz verbinden könnt
+23. Optional: Versucht das destroy script nun von eurem Laptop aus zu starten
