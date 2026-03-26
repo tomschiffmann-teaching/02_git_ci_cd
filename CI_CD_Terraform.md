@@ -61,3 +61,19 @@ resource "aws_instance" "demo" {
 4. In main.tf austauschen
 5. Auf Github.com secrets austauschen (access key und secret access key)
 6. Push und pipeline zum Laufen kriegen
+
+# Github
+
+- Unter Github könnt ihr Branches schützen
+- Z.B. könnt ihr den `main` Branch davor schützen, dass man direkt auf deisen pushen kann
+- Das schützt vorallem davor, dass Änderungen ungewollt frühzeitig auf dem main (produktions) Branch landen
+
+1. Im Repository auf Settings gehen
+2. Bracnches --> Add Rule Set+
+3. Namen geben (z.B. Block push Action)
+4. Enforcement Status auf `Active` setzen
+   ![](./images/github/enforcement_status.png)
+5. Target Branch auswählen (default, da der default standardmäßig der main Branch ist)
+   ![](./images/github/rulset_select_branch.png)
+6. Bei Rules zusätlich `Require a pull request before merging` anklicken
+7. Sichern
