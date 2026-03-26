@@ -51,3 +51,13 @@ resource "aws_instance" "demo" {
 21. Probieren, ob ihr euch auf die EC2 Instanz verbinden könnt (via Instance Connect)
 22. Optional: Probiert, ob ihr euch mit dem privatem Schlüssel von eurem Computer aus auf die EC2 Instanz verbinden könnt
 23. Optional: Versucht das destroy script nun von eurem Laptop aus zu starten
+24. Optional (für diejenigen, die schon fertig sind). Als user möchte ich die Möglichkeit haben das Terraform script `destroy` manuell zu starten und somit die terraform deployments zu löschen
+
+## Um neu zu deployen
+
+1. AWS Sandbox starten
+2. S3 Bucket anlegen
+3. Key-Pair anlegen
+4. In main.tf austauschen
+5. Auf Github.com secrets austauschen (access key und secret access key)
+6. Push und pipeline zum Laufen kriegen
